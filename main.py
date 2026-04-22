@@ -18,7 +18,7 @@ app = FastAPI(
 # ──────────────────────────────────────────
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Em produção, troque pelo domínio do seu frontend
+    allow_origins=['https://mangatracker-frontend.vercel.app'],  # Em produção, troque pelo domínio do seu frontend
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
